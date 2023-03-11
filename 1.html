@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+    <head><!-- 網頁資訊 -->
+        <!-- Meta標籤 -->
+        <meta charset="UTF-8"></meta>   
+        <meta name="description" content="嘿yo" />
+        <meta name="author" content="嘿yo" />
+        <meta name="keywords" content="嘿yo,what's up,gg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />    <!-- 手機電腦內容大小調整 -->
+        
+        <title>小白的網頁</title> 
+        <link rel="stylesheet" href="sb-admin-2.css"> 
+        <link rel="stylesheet" href="sb-admin-2.min.css">
+        <!--<link rel="stylesheet" href="styles.css">  
+      
+        <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"> 
+        <style>body {background-color: rgb(233, 221, 202);}</style>      css用style包起來 -->
+    </head>
+    <body>  <!-- 網頁內容 -->
+        <h1>第一篇文章</h1> <!-- h1最大~h6 -->
+        <p>hello 我不是<b>小白</b></p>  <!-- p內容,b粗體,i斜體 -->
+        <p><i>呼拉</i></p>
+        <br/>   <!-- 中間沒加東西可以省去結束標籤 -->
+        <br/>   <!-- 換行 -->
+        <p>哭哭囉~~</p>
+        <hr/>   <!-- 水平線 -->
+        
+        <!-- 連結&圖片 -->
+
+        <nav>
+            <a href="http://google.com">goooole拉</a>   <!-- href為a的屬性 a a中間顯示連結的名稱-->
+            <a href="2.html">page2</a>  <!-- 檔案在同個資料夾 -->
+            <a href="dir/3.html">page3</a>  <!-- 檔案在資料夾裡的dir資料夾 -->
+            <a href="https://reurl.cc/pLMGgd"><b>好好看的</b></a>   <!-- 圖片為連結 -->
+        </nav>
+        
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <bdo dir="rtl">大雄比較懶</bdo>     <!-- 字左右顛倒 -->
+        <abbr title="就是蠻爛的意思 沒有其他了">爛</abbr>
+        <br/>
+        <img src="poke.png" width="300" />
+        <br/>
+        <img src="gg.png" width="500"/>  
+        <br/>
+        <!-- 影片 & 嵌入youtube影片 -->
+        <video src="myvideo.mp4" controls width="900">瀏覽器無法載入影片</video><!-- 檔案在同個資料夾 control指令可以播放 -->
+        <br/>
+        <br/>
+        <br/>
+        <video src="20230204.mp4" controls width="900">瀏覽器無法載入影片</video>
+        <!-- youtube的分享鍵崁入直接貼上 -->
+        <h3><u>我從這裡學Html的</u></h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CLUPkcLQm64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br/>
+        <h4><u>喜歡看的twitcher</u></h4>
+        <br/>
+        <br/>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qLGSJ5wA39I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h3>好聽的直笛演奏</h3>
+        <audio controls>
+            <source src="123.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+       
+        <!-- 列表 -->
+        <ul>    <!-- 黑點 -->
+            <li>goole</li> <!-- li代表內容 -->
+            <li>twitch</li>
+            <li>ig</li>
+        </ul>
+        <ol>    <!-- 數字 -->
+            <li>goole</li>
+            <li>twitch</li>
+            <li>ig</li> 
+        </ol>
+        <ol type="i">   <!-- 以a作排列 羅馬數字用 i -->
+            <li>goole</li> 
+            <li>twitch</li>
+            <li>ig</li> 
+        </ol>
+        <!-- 表格 -->
+        <table width="500"> <!-- 表格 -->
+            <tr>    <!-- tr代表行 -->
+                <th>科系</th>   <!-- th代表標題 -->
+                <th>名字</th>
+                <th>學號</th>
+            </tr>
+            <tr>
+               <td>資工系</td>  <!-- td代表內容 -->
+               <td>蕭琦峰</td>
+               <td>B1029033</td>
+            </tr>
+        </table>
+        <style>
+            table {
+             font-family: Arial, Helvetica, sans-serif;
+             border-collapse: collapse;
+             width: 100%;
+            }
+            td, th {
+             border: 1px solid #ddd;
+             padding: 6px;
+            }
+            tr:nth-child(even){background-color: #f2f2f2;}
+            tr:hover {background-color: #ddd;}
+            th {
+             padding-top: 12px;
+             padding-bottom: 12px;
+             text-align: left;
+             background-color: #dc9eca;
+             color: white;
+            }
+        </style>
+        <!-- Html的容器 (可一次操作div裡的東西)-->  
+        <br/>
+        <br/>
+        <hr/>
+        <br/>
+        <br/>
+        <div style="color:red;">
+            <ul>    <!-- 黑點 -->
+                <li>goole</li> <!-- li代表內容 -->
+                <li>twitch</li>
+                <li>ig</li>
+            </ul>
+            <ol>    <!-- 數字 -->
+                <li>goole</li>
+                <li>twitch</li>
+                <li>ig</li> 
+            </ol>
+            <ol type="i">   <!-- 以a作排列 羅馬數字用 i -->
+                <li>goole</li> 
+                <li>twitch</li>
+                <li>ig</li> 
+            </ol>
+            <!-- 表格 -->
+            <table width="500"> <!-- 表格 -->
+                <tr>    <!-- tr代表行 -->
+                    <th>科系</th>   <!-- th代表標題 -->
+                    <th>名字</th>
+                    <th>學號</th>
+                </tr>
+                <tr>
+                   <td>資工系</td>  <!-- td代表內容 -->
+                   <td>蕭琦峰</td>
+                   <td>B1029033</td>
+                </tr>
+            </table>
+            
+        </div>  
+        <span>span空間可自訂</span>
+        <span>span空間可自訂</span>
+        <hr/>
+        <div>div空間佔一整行</div>
+        <div>div空間佔一整行</div>
+        <br/>
+        <br/>
+
+        <!-- html輸入標籤 -->
+
+        <input type="text" placeholder="請輸入帳號"/>   <!-- text輸入文字 -->
+        <br/>
+        <br/>
+        <input type="password" placeholder="請輸入密碼"/>   <!-- password密碼遮擋 -->
+        <br/>
+        <br/>
+        <input type="date"/>    <!-- 選日期 -->
+        <br/>
+        <br/>
+        <input type="range"/>   
+        <br/>
+        <br/>
+        <input type="file"/>    <!-- 上傳檔案 -->
+        <br/>
+        <br/>
+        <input type="checkbox"/>    <!-- 確認勾選鍵 -->
+        <br/>
+        <br/>
+        <textarea>你好喔喔喔喔喔喔喔喔ㄛ</textarea>    <!-- 文字框 -->
+        
+    </body>
+</html>
