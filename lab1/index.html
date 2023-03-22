@@ -19,7 +19,7 @@
                console.log(e.key);
                if(e.key) {
                  if(e.key == container.textContent[0]) {
-                   container.textContent = container.textContent.replace(/^./,"");
+                   container.textContent = container.textContent.replace(/./,"");
                  }
                  add_new_chars();
                }
