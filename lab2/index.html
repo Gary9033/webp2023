@@ -1,0 +1,44 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+  rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+      <h1>資工系選修表</h1>
+      <table id="csie" clss="table table-striped table-hover">
+      <tr>
+        <th>開課單位</th>
+        <th>課程名稱</th>
+        <th>授課老師</th>
+      </tr>
+      </table>
+     
+        <script>
+          var d =["資工系","資工系","資工系","資工系","資工系","資工系"];
+          var c =["物件導向軟體設計","計算機網路實驗","作業系統實務","生物統計","通訊系統","軟硬體專題(2)"];
+          var t =["黃崇源", "李春良","張哲維","陳光武","陳仁暉","魏志達"]
+          function addNewData(x){
+            var myTable=document.getElementById("csie");
+            var rowCount = c.length;
+            var cellCount = myTable.rows[0].cells.length;
+            var n = myTable.rows.length;
+            if(x){
+              for(var i=0;i<rowCount;i++){
+              var row = myTable.insertRow(-1); 
+              row.insertCell(0).innerHTML = d[i]; 
+              row.insertCell(1).innerHTML = c[i]; 
+              row.insertCell(2).innerHTML = t[i];                 console.log(d[i], c[i], t[i]);
+              }
+            }else{
+              if(n>1){
+                myTable.deleteRow(-1);
+                n--;
+              }
+            }
+          }
+        </script>
+      <button onclick="addNewData(1)">addNewData</button>
+      <button onclick="addNewData(0)">delOldData</button>
+    </body>
+  </html>
